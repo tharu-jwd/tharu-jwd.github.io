@@ -6,7 +6,7 @@ import { Download, Code, Palette, Database, Linkedin } from "lucide-react"
 const skills = {
     frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "HTML/CSS"],
     backend: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
-    tools: ["Git", "VS Code", "Figma", "Docker", "Vercel", "AWS"]
+    tools: ["Git", "VS Code", "Figma", "Docker", "Vercel"]
 }
 
 export default function About() {
