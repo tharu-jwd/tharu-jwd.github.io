@@ -52,11 +52,15 @@ export default function Home() {
                     </CardDescription>
                   </div>
                   <div className="flex gap-2 ml-4">
-                    <Button size="sm" variant="ghost">
-                      <Github className="h-4 w-4" />
+                    <Button size="sm" variant="ghost" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                      </a>
                     </Button>
-                    <Button size="sm" variant="ghost">
-                      <ExternalLink className="h-4 w-4" />
+                    <Button size="sm" variant="ghost" asChild>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </div>
