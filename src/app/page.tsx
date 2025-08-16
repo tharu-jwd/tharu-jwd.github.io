@@ -5,24 +5,10 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Cool Web App",
-    description: "A sick web app that does amazing things and makes people happy",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "Mobile Experience",
-    description: "Responsive design that works beautifully on all devices",
-    tech: ["React", "Framer Motion", "CSS"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "Backend API",
-    description: "Clean, scalable API that powers modern applications",
-    tech: ["Node.js", "Express", "MongoDB"],
-    github: "#",
+    title: "Nano Processor",
+    description: "4-bit processor implementation using VHDL on Basys3 FPGA board with custom instruction set, arithmetic operations, and 7-segment display output.",
+    tech: ["VHDL", "FPGA", "Basys3", "Digital Design"],
+    github: "https://github.com/tharu-jwd/nano-processor",
     demo: "#"
   }
 ]
