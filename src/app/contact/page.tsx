@@ -16,13 +16,27 @@ export default function Contact() {
         message: ""
     })
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        // Handle form submission here
-        console.log("Form submitted:", formData)
-        alert("Thanks for your message! I'll get back to you soon.")
-        // Reset form
-        setFormData({ name: "", email: "", subject: "", message: "" })
+        
+        const form = e.target as HTMLFormElement
+        const formData = new FormData(form)
+        
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            })
+            
+            if (response.ok) {
+                alert("Thanks for your message! I'll get back to you soon.")
+                setFormData({ name: "", email: "", subject: "", message: "" })
+            } else {
+                alert("Something went wrong. Please try again.")
+            }
+        } catch (error) {
+            alert("Something went wrong. Please try again.")
+        }
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -55,6 +69,7 @@ export default function Contact() {
                             </CardHeader>
                             <CardContent>
                                 <form onSubmit={handleSubmit} className="space-y-6">
+                                    <input type="hidden" name="access_key" value="29284f9f-d917-4a36-9707-d04f1eb85969" />
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
                                             <Label htmlFor="name">Name</Label>
