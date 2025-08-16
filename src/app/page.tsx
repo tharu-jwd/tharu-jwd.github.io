@@ -5,10 +5,10 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Nano Processor",
-    description: "4-bit processor implementation using VHDL on Basys3 FPGA board with custom instruction set, arithmetic operations, and 7-segment display output.",
-    tech: ["VHDL", "FPGA", "Basys3", "Digital Design"],
-    github: "https://github.com/tharu-jwd/nano-processor",
+    title: "Test Project",
+    description: "This is a sample project description to test the portfolio layout and functionality. It demonstrates how projects are displayed with technologies and links.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    github: "#",
     demo: "#"
   }
 ]
