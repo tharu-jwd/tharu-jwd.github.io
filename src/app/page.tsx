@@ -25,7 +25,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          A showcase of web applications I've built.
+          A showcase of web applications I&apos;ve built.
         </p>
         <div className="flex gap-4 justify-center">
           <Button variant="outline" size="lg" asChild>
