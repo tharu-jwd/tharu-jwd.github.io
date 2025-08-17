@@ -8,8 +8,8 @@ export function Navigation() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ["home", "projects", "about", "resume", "contact"]
-            const scrollPosition = window.scrollY + 100
+            const sections = ["home", "projects", "about", "contact"]
+            const scrollPosition = window.scrollY + 200
 
             for (const section of sections) {
                 const element = document.getElementById(section)
@@ -34,16 +34,10 @@ export function Navigation() {
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
         if (element) {
-            if (sectionId === "resume") {
-                // For resume section, scroll to center it on screen
-                const elementTop = element.offsetTop
-                const elementHeight = element.offsetHeight
-                const windowHeight = window.innerHeight
-                const offset = elementTop - (windowHeight / 2) + (elementHeight / 2)
-                
-                window.scrollTo({
-                    top: offset,
-                    behavior: "smooth"
+            if (sectionId === "contact") {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
                 })
             } else {
                 element.scrollIntoView({
@@ -80,13 +74,6 @@ export function Navigation() {
                             onClick={() => scrollToSection("about")}
                         >
                             About
-                        </Button>
-                        <Button
-                            variant={activeSection === "resume" ? "default" : "ghost"}
-                            size="sm"
-                            onClick={() => scrollToSection("resume")}
-                        >
-                            Resume
                         </Button>
                         <Button
                             variant={activeSection === "contact" ? "default" : "ghost"}

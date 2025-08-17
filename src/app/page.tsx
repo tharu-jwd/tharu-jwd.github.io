@@ -91,6 +91,16 @@ export default function Home() {
                 GitHub
               </a>
             </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://linkedin.com/in/tharupahan-jayawardana" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-4 w-4" />
+                LinkedIn
+              </a>
+            </Button>
+            <Button size="lg">
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </Button>
           </div>
         </div>
       </section>
@@ -232,29 +242,6 @@ export default function Home() {
 
       </section>
 
-      {/* Resume Section */}
-      <section id="resume" className="px-6 py-16 max-w-4xl mx-auto">
-        <div className="text-center">
-          <Card>
-            <CardHeader>
-              <CardTitle>More About Me</CardTitle>
-            </CardHeader>
-            <CardContent className="flex gap-4 justify-center">
-              <Button size="lg">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <a href="https://linkedin.com/in/tharupahan-jayawardana" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="mr-2 h-4 w-4" />
-                  LinkedIn
-                </a>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="px-6 py-16 max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -363,6 +350,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </main>
   )
 }
