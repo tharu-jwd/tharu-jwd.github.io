@@ -230,8 +230,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* More About Me Section */}
-        <div id="resume" className="text-center">
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="px-6 py-16 max-w-4xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Resume & Links</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Learn more about my background and connect with me professionally.
+          </p>
           <Card>
             <CardHeader>
               <CardTitle>More About Me</CardTitle>
