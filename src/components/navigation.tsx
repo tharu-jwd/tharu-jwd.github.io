@@ -8,7 +8,7 @@ export function Navigation() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ["home", "projects", "about", "resume", "contact"]
+            const sections = ["home", "projects", "about", "contact"]
             const scrollPosition = window.scrollY + 100
 
             for (const section of sections) {
@@ -82,7 +82,7 @@ export function Navigation() {
                             About
                         </Button>
                         <Button
-                            variant={activeSection === "resume" ? "default" : "ghost"}
+                            variant="ghost"
                             size="sm"
                             onClick={() => scrollToSection("resume")}
                         >
