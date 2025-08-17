@@ -25,7 +25,7 @@ export default function About() {
                 <section className="mb-16">
                     <Card>
                         <CardHeader>
-                            <CardTitle className="text-2xl">Who am I</CardTitle>
+                            <CardTitle className="text-2xl">Who I am</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-4">
                             <p className="text-muted-foreground leading-relaxed">
