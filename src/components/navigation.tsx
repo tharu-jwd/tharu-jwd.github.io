@@ -8,22 +8,10 @@ export function Navigation() {
 
     useEffect(() => {
         const handleScroll = () => {
+            const sections = ["home", "projects", "about", "resume", "contact"]
             const scrollPosition = window.scrollY + 100
 
-            // Check for resume section first (since it's nested in about)
-            const resumeElement = document.getElementById("resume")
-            if (resumeElement) {
-                const resumeTop = resumeElement.offsetTop
-                const resumeBottom = resumeTop + resumeElement.offsetHeight
-                
-                if (scrollPosition >= resumeTop && scrollPosition < resumeBottom) {
-                    setActiveSection("resume")
-                    return
-                }
-            }
-
-            // Then check other sections
-            for (const section of ["home", "projects", "about", "contact"]) {
+            for (const section of sections) {
                 const element = document.getElementById(section)
                 if (element) {
                     const offsetTop = element.offsetTop
