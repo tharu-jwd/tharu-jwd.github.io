@@ -97,9 +97,11 @@ export default function Home() {
                 LinkedIn
               </a>
             </Button>
-            <Button size="lg">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
+            <Button size="lg" asChild>
+              <a href="/Tharupahan Jayawardana - CV.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>
