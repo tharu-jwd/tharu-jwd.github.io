@@ -11,6 +11,13 @@ import { Github, ExternalLink, Code, Palette, Database, Download, Linkedin, Mail
 
 const projects = [
   {
+    title: "RSI Monitor",
+    description: "RSI Monitor helps investors to quickly identify overbought and oversold stocks on the Colombo Stock Exchange with automated daily RSI value updates.",
+    tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    github: "https://github.com/tharu-jwd/tharu-jwd.github.io",
+    demo: "https://tharu-jwd.github.io/sri-lanka-rsi-monitor/"
+  },
+  {
     title: "Elderly",
     description: "A web-based platform that connects elderly individuals with caregivers for home based caregiving sessions. Developed collaboratively with my team.",
     tech: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
