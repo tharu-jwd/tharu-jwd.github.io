@@ -89,7 +89,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            A showcase of web applications I&apos;ve built.
+            A showcase of web applications I&apos;ve built
           </p>
           <div className="flex gap-4 justify-center">
             <Button variant="outline" size="lg" asChild>
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Tharupahan Jayawardana</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Creating impactful digital experiences with a focus on usability and design.
+            Creating impactful digital experiences with a focus on usability and design
           </p>
         </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
                 I specialize in modern web technologies like React, Next.js, and TypeScript.
-                Beyond client work, I explore emerging technologies and contribute to open source, continuously sharpening my skills to bring the best solutions to every project.
+                Beyond personal work, I explore emerging technologies and contribute to open source, continuously sharpening my skills to bring the best solutions to every project.
               </p>
             </CardContent>
           </Card>
