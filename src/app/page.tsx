@@ -34,9 +34,9 @@ const projects = [
 ]
 
 const skills = {
-    frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "HTML/CSS"],
-    backend: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
-    tools: ["Git", "VS Code", "Figma", "Docker", "Vercel"]
+    frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
+    backend: ["Node.js", "Express"],
+    tools: ["Git", "VS Code", "Docker"]
 }
 
 export default function Home() {
